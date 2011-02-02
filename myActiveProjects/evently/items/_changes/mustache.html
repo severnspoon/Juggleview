@@ -1,0 +1,43 @@
+<h3>Activity this week</h3>
+<ul class="desktop">
+  {{#items}}
+	<li class="listItem project {{memoType}} {{main}} complexity_{{complexity}}">
+		<div class="item">
+			<div class="projectHeader">
+				<h3>
+					{{title}}
+				</h3>
+				<p>
+					{{team}}
+				</p>
+			</div>
+			<div class="commandView view">
+				<dl class="commands" item_id="{{_id}}">
+					{{#description}}<dt>overview</dt>{{/description}}
+					<dt>juggle</dt>
+					<dt>hide</dt>
+				</dl>
+			</div>
+			{{#description?}}
+			<div class="overview view">
+				<p>
+					{{description}}
+				</p>
+			</div>
+			{{/description?}}
+			<div class="juggleView view">
+				<applet archive="http://www.jugglewiki.org/w/JugglingLab.jar" code="JugglingLabAWT">
+					<param name="config" value="entry=none;view=simple">
+					<param name="animprefs" value="mousepause=false;">
+					<param name="notation" value="siteswap">
+					<param name="pattern" value="pattern={{juggleSiteswap}};colors={blue}{red}{blue}{yellow}{red}{blue}{green};tps=6">
+				</applet>
+			</div>
+		</div>
+	</li>
+  {{/items}}
+</ul>
+<!-- 
+TODO: wire up memoType as style switcher
+
+-->

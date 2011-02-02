@@ -1,0 +1,91 @@
+h1{font:36px Georgia;color:#666;}
+h1 span.titleDetail,h3{font:18px Georgia;color:#666;}
+body{margin-bottom:20px;}
+#account{
+	position:absolute;right:0;top:0;
+	font:12px Helvetica;
+}
+li.project{
+	border:2px solid #666;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	float:left;
+	padding:20px;
+	margin:20px;
+	margin-bottom:20px;
+	width:17%;
+	height:240px;
+	position:relative;
+	cursor:grab;
+	background-color:white;
+}
+
+li.complexity_4{
+	border:1px solid #333;
+}
+li.complexity_5{
+	border:1px solid red;
+}
+li.complexity_6,
+.main{
+	width:37%;
+	height:562px;
+}
+li.complexity_6 .juggleView applet,
+.main .juggleView applet{
+	height:500px !important;    
+}
+.overview,
+textarea{
+	width:200px;
+	height:145px;
+	padding:5px;
+	font:12px Helvetica;
+	border:0;
+	}
+
+.status{
+	border:1px solid #efefef;
+	background-color:#efefef;
+}
+.desktop{list-style-type: none; margin: 0; padding: 0; }
+.projectHeader h3,
+.projectHeader h3 input{font:18px Georgia;margin:0;}
+.projectHeader p{font:12px Helvetica;margin:0;color:#999;}
+input{border:0;color:#666;}
+
+.todoList{border-color:#00cc33;}
+ul li.new{list-style:none;}
+.juggleView applet{width:100% !important;height:200px !important;}
+.messageType{position:absolute;bottom:-5px;right:10px;font:10px Helvetica;color:#999;}
+.bigPlus{}
+.bigPlus input.createButton{
+	font:60px/30px Georgia;
+	width:100%;
+	height:50px;
+	cursor:pointer;
+}
+.bigPlus input.createButton:hover{
+	background-color:white;
+	color:green;
+}
+.inactive{opacity:0.3;-moz-opacity:0.3;-webkit-opacity:0.3;}
+.messageBody p{font:12px Helvetica;margin:0;}
+.messageBody ul{
+	margin:0;
+	padding:20px;
+}
+input.inline{display:inline;float:left;border:1px solid #ccc;}
+li input.submit{float:left;cursor:pointer;}
+
+
+div.commandView{position:absolute;bottom:0;margin-top:30px;display:none;}
+dl.commands{}
+dl.commands dt{float:left;margin-right:10px;font:11px Helvetica;cursor:pointer;}
+dl.commands dt:hover{color:red;}
+dl.commands dd{display:none;}
+
+
+
+div.footer{clear:both;margin:20px;font:12px Helvetica;color:#999;}

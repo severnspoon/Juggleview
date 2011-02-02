@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <link rel="stylesheet" href="style/skin1.css" type="text/css">
+	<meta name="author" content="Scott Krieger">
+  </head>
+  <body>
+    <div id="account"></div>
+
+    <h1>My Projects</h1>
+    <div id="items"></div>
+    <div id="profile"></div>
+    <div id="sidebar"></div>
+  </body>
+  <script src="vendor/couchapp/loader.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $.couch.app(function(app) {
+      $("#account").evently("account", app);
+      $("#profile").evently("profile", app);
+      $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
+      $("#items").evently("items", app);
+    });
+  </script>
+</html>
